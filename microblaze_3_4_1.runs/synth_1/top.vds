@@ -1,0 +1,1213 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jun 22 00:51:14 2018
+# Process ID: 1452
+# Current directory: D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/top.vds
+# Journal file: D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/HUST_study/FPGA_based_DSP/hamming_window_cpp_prj/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/HUST_study/FPGA_based_DSP/stream_average_prj/solution2/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+add_files: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 406.773 ; gain = 144.594
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7680 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 526.938 ; gain = 108.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/imports/sources_1/new/top.v:54]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_intc_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_intc_0_0' (1#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_smc_0' (2#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_1_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_1_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_smc_1_1' (3#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_1_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_smc_1' of module 'design_1_axi_smc_1_1' requires 42 connections, but only 39 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:794]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_2_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_2_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_smc_2_0' (4#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_2_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_smc_2' of module 'design_1_axi_smc_2_0' requires 36 connections, but only 33 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:834]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_3_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_3_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_smc_3_1' (5#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_3_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_smc_3' of module 'design_1_axi_smc_3_1' requires 42 connections, but only 39 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:868]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_1_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_smc_1_0' (6#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_smc_4' of module 'design_1_axi_smc_1_0' requires 42 connections, but only 39 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:908]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_2_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_2_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_smc_2_1' (7#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_2_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_smc_5' of module 'design_1_axi_smc_2_1' requires 36 connections, but only 33 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:948]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_3_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_3_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_smc_3_0' (8#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_smc_3_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_smc_6' of module 'design_1_axi_smc_3_0' requires 42 connections, but only 39 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:982]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_tft_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_tft_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_tft_0_0' (9#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_tft_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_tft_0' of module 'design_1_axi_tft_0_0' requires 61 connections, but only 59 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:1022]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0' (10#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'design_1_fir_compiler_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_fir_compiler_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_fir_compiler_0_0' (11#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_fir_compiler_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (12#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'hier_fft_1_imp_12R9B6A' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3157]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_2' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_2' (13#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_datamover_0_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_datamover_0_1' (14#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_datamover_fft' of module 'design_1_axi_datamover_0_1' requires 36 connections, but only 30 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3267]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_3' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_3' (15#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_3_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_0' (16#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_1' (17#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xfft_0_2' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xfft_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xfft_0_2' (18#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xfft_0_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'xfft_0' of module 'design_1_xfft_0_2' requires 20 connections, but only 12 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3304]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconcat_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconcat_0_0' (19#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hier_fft_1_imp_12R9B6A' (20#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3157]
+INFO: [Synth 8-638] synthesizing module 'hier_fft_2_imp_1DFE0WN' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3323]
+INFO: [Synth 8-638] synthesizing module 'design_1_always_true_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_always_true_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_always_true_0' (21#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_always_true_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_datamover_fft_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_fft_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_datamover_fft_0' (22#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_fft_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_datamover_fft' of module 'design_1_axi_datamover_fft_0' requires 36 connections, but only 30 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3433]
+INFO: [Synth 8-638] synthesizing module 'design_1_dtmv_fft_cmd_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dtmv_fft_cmd_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dtmv_fft_cmd_0' (23#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dtmv_fft_cmd_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_fft_all_0_imag_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_fft_all_0_imag_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_fft_all_0_imag_0' (24#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_fft_all_0_imag_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_fft_config_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_fft_config_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_fft_config_0' (25#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_fft_config_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xfft_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xfft_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xfft_0_0' (26#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xfft_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xfft_0' of module 'design_1_xfft_0_0' requires 20 connections, but only 12 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3470]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconcat_0_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconcat_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconcat_0_1' (27#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconcat_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hier_fft_2_imp_1DFE0WN' (28#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3323]
+INFO: [Synth 8-638] synthesizing module 'hier_fft_data_1_imp_1ME67Y8' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3489]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_1' (29#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_bram_ctrl_fft_read' of module 'design_1_axi_bram_ctrl_0_1' requires 40 connections, but only 36 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3638]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (30#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_bram_ctrl_fft_write' of module 'design_1_axi_bram_ctrl_0_0' requires 40 connections, but only 35 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3675]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_blk_mem_gen_0_0' (31#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_0' requires 16 connections, but only 14 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3711]
+INFO: [Synth 8-256] done synthesizing module 'hier_fft_data_1_imp_1ME67Y8' (32#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3489]
+INFO: [Synth 8-638] synthesizing module 'hier_fft_data_2_imp_1TH2V45' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3728]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_fft_read_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_fft_read_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_fft_read_0' (33#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_fft_read_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_bram_ctrl_fft_read' of module 'design_1_axi_bram_ctrl_fft_read_0' requires 40 connections, but only 36 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3877]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_fft_write_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_fft_write_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_fft_write_0' (34#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_fft_write_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_bram_ctrl_fft_write' of module 'design_1_axi_bram_ctrl_fft_write_0' requires 40 connections, but only 35 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3914]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_2' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_blk_mem_gen_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_blk_mem_gen_0_2' (35#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_blk_mem_gen_0_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_2' requires 16 connections, but only 14 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3950]
+INFO: [Synth 8-256] done synthesizing module 'hier_fft_data_2_imp_1TH2V45' (36#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3728]
+INFO: [Synth 8-638] synthesizing module 'hier_mod_1_imp_QF52CR' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3967]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_datamover_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_datamover_0_0' (37#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_datamover_mod_mm2s' of module 'design_1_axi_datamover_0_0' requires 33 connections, but only 26 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4152]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_datamover_0_2' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_datamover_0_2' (38#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_0_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_datamover_mod_s2mm' of module 'design_1_axi_datamover_0_2' requires 36 connections, but only 30 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4179]
+INFO: [Synth 8-638] synthesizing module 'design_1_dtmv_cmd_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dtmv_cmd_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dtmv_cmd_0' (39#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dtmv_cmd_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_dtmv_mod_mm2s_cmd_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dtmv_mod_mm2s_cmd_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dtmv_mod_mm2s_cmd_0' (40#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dtmv_mod_mm2s_cmd_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_0_0' (41#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_fix2float_imag_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_fix2float_imag_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_fix2float_imag_0' (42#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_fix2float_imag_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'floating_point_fix2float_real' of module 'design_1_floating_point_fix2float_imag_0' requires 10 connections, but only 9 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4225]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_0_4' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_0_4_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_0_4' (43#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_0_4_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4246]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_0_5' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_0_5_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_0_5' (44#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_0_5_stub.v:6]
+WARNING: [Synth 8-350] instance 'floating_point_sqrt' of module 'design_1_floating_point_0_5' requires 10 connections, but only 6 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4246]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_0_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_0_1' (45#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'floating_point_square_imag' of module 'design_1_floating_point_0_1' requires 14 connections, but only 13 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4253]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_square_imag_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_square_imag_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_square_imag_0' (46#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_square_imag_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'floating_point_square_real' of module 'design_1_floating_point_square_imag_0' requires 14 connections, but only 13 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4267]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_0_2' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_0_2' (47#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_0_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_stream_average_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_stream_average_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_stream_average_0_0' (48#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_stream_average_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'stream_average_0' of module 'design_1_stream_average_0_0' requires 14 connections, but only 11 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4296]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_6' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_6_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_6' (49#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_6_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_4' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_4_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_4' (50#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_4_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlslice_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlslice_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlslice_0_0' (51#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlslice_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlslice_0_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlslice_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlslice_0_1' (52#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlslice_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hier_mod_1_imp_QF52CR' (53#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3967]
+INFO: [Synth 8-638] synthesizing module 'hier_mod_2_imp_SHXM26' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4320]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_datamover_mod_mm2s_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_mod_mm2s_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_datamover_mod_mm2s_0' (54#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_mod_mm2s_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_datamover_mod_mm2s' of module 'design_1_axi_datamover_mod_mm2s_0' requires 33 connections, but only 26 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4505]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_datamover_mod_s2mm_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_mod_s2mm_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_datamover_mod_s2mm_0' (55#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_datamover_mod_s2mm_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_datamover_mod_s2mm' of module 'design_1_axi_datamover_mod_s2mm_0' requires 36 connections, but only 30 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4532]
+INFO: [Synth 8-638] synthesizing module 'design_1_dtmv_mod_mm2s_cmd_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dtmv_mod_mm2s_cmd_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dtmv_mod_mm2s_cmd_1' (56#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dtmv_mod_mm2s_cmd_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_dtmv_mod_s2mm_cmd_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dtmv_mod_s2mm_cmd_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dtmv_mod_s2mm_cmd_0' (57#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dtmv_mod_s2mm_cmd_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_fix2float_imag_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_fix2float_imag_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_fix2float_imag_1' (58#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_fix2float_imag_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_fix2float_real_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_fix2float_real_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_fix2float_real_0' (59#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_fix2float_real_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'floating_point_fix2float_real' of module 'design_1_floating_point_fix2float_real_0' requires 10 connections, but only 9 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4578]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_float2fix_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_float2fix_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_float2fix_0' (60#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_float2fix_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4599]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_sqrt_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_sqrt_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_sqrt_0' (61#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_sqrt_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'floating_point_sqrt' of module 'design_1_floating_point_sqrt_0' requires 10 connections, but only 6 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4599]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_square_imag_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_square_imag_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_square_imag_1' (62#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_square_imag_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'floating_point_square_imag' of module 'design_1_floating_point_square_imag_1' requires 14 connections, but only 13 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4606]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_square_real_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_square_real_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_square_real_0' (63#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_square_real_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'floating_point_square_real' of module 'design_1_floating_point_square_real_0' requires 14 connections, but only 13 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4620]
+INFO: [Synth 8-638] synthesizing module 'design_1_floating_point_sum_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_sum_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_floating_point_sum_0' (64#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_floating_point_sum_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_stream_average_0_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_stream_average_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_stream_average_0_1' (65#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_stream_average_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'stream_average_0' of module 'design_1_stream_average_0_1' requires 14 connections, but only 11 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4649]
+INFO: [Synth 8-638] synthesizing module 'design_1_stream_avg_start_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_stream_avg_start_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_stream_avg_start_0' (66#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_stream_avg_start_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_true_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_true_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_true_0' (67#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_true_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlslice_imag_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlslice_imag_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlslice_imag_0' (68#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlslice_imag_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlslice_real_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlslice_real_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlslice_real_0' (69#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlslice_real_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hier_mod_2_imp_SHXM26' (70#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4320]
+INFO: [Synth 8-638] synthesizing module 'hier_mod_data_1_imp_1AO2YGD' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4673]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_3' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_0_3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_3' (71#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_0_3_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_2' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_2' (72#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_0_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_bram_ctrl_mod_write' of module 'design_1_axi_bram_ctrl_0_2' requires 40 connections, but only 35 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4933]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_blk_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_blk_mem_gen_0_1' (73#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_blk_mem_gen_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_1' requires 16 connections, but only 14 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4969]
+INFO: [Synth 8-256] done synthesizing module 'hier_mod_data_1_imp_1AO2YGD' (74#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4673]
+INFO: [Synth 8-638] synthesizing module 'hier_mod_data_2_imp_14FU8MG' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4986]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_mod_read_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_mod_read_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_mod_read_0' (75#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_mod_read_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_mod_write_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_mod_write_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_mod_write_0' (76#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_axi_bram_ctrl_mod_write_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_bram_ctrl_mod_write' of module 'design_1_axi_bram_ctrl_mod_write_0' requires 40 connections, but only 35 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5246]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_3' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_blk_mem_gen_0_3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_blk_mem_gen_0_3' (77#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_blk_mem_gen_0_3_stub.v:6]
+WARNING: [Synth 8-350] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_3' requires 16 connections, but only 14 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5282]
+INFO: [Synth 8-256] done synthesizing module 'hier_mod_data_2_imp_14FU8MG' (78#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:4986]
+INFO: [Synth 8-638] synthesizing module 'hier_preprocess_1_imp_1XNOGW7' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5299]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_5' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_5_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_5' (79#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xlconstant_0_5_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_hamming_window_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_hamming_window_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_hamming_window_0_0' (80#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_hamming_window_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'hamming_window_0' of module 'design_1_hamming_window_0_0' requires 24 connections, but only 16 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5341]
+INFO: [Synth 8-256] done synthesizing module 'hier_preprocess_1_imp_1XNOGW7' (81#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5299]
+INFO: [Synth 8-638] synthesizing module 'hier_preprocess_2_imp_1HYT9AA' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5360]
+INFO: [Synth 8-638] synthesizing module 'design_1_fir_compiler_0_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_fir_compiler_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_fir_compiler_0_1' (82#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_fir_compiler_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'fir_compiler_0' of module 'design_1_fir_compiler_0_1' requires 8 connections, but only 7 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5399]
+INFO: [Synth 8-638] synthesizing module 'design_1_hamming_ap_start_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_hamming_ap_start_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_hamming_ap_start_0' (83#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_hamming_ap_start_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_hamming_window_0_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_hamming_window_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_hamming_window_0_1' (84#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_hamming_window_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'hamming_window_0' of module 'design_1_hamming_window_0_1' requires 24 connections, but only 16 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5409]
+INFO: [Synth 8-256] done synthesizing module 'hier_preprocess_2_imp_1HYT9AA' (85#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5360]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_xlconcat_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_microblaze_0_xlconcat_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (86#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_microblaze_0_xlconcat_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mdm_1_0' (87#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (88#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'microblaze_0' of module 'design_1_microblaze_0_0' requires 130 connections, but only 109 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:1464]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:1883]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5428]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (89#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5428]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5560]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (90#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5560]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_7ANRHB' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5692]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (91#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5692]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1W07O72' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5824]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1W07O72' (92#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5824]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5956]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_0' (93#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 52 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6171]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (94#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:5956]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6226]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_1' (95#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_1' requires 56 connections, but only 52 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6441]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (96#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6226]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_4YOIXL' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6496]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_4YOIXL' (97#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6496]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6862]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (98#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6862]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (99#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (18) of port connection 'm_axi_arprot' does not match port width (21) of module 'design_1_xbar_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3118]
+WARNING: [Synth 8-689] width (18) of port connection 'm_axi_awprot' does not match port width (21) of module 'design_1_xbar_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:3122]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (100#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:1883]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6628]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (101#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_0' (102#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6774]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (103#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_0' (104#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6820]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (105#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_1_lmb_bram_0' requires 16 connections, but only 14 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6845]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (106#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:6628]
+INFO: [Synth 8-638] synthesizing module 'design_1_mig_7series_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mig_7series_0_0' (107#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_mig_7series_0_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'mig_7series_0' of module 'design_1_mig_7series_0_0' requires 68 connections, but only 58 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:1781]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (108#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' requires 10 connections, but only 9 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:1840]
+INFO: [Synth 8-638] synthesizing module 'design_1_xadc_wiz_0_0' [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xadc_wiz_0_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xadc_wiz_0_0' (109#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/realtime/design_1_xadc_wiz_0_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'xadc_wiz_0' of module 'design_1_xadc_wiz_0_0' requires 37 connections, but only 30 given [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:1850]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (110#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (111#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-256] done synthesizing module 'top' (112#1) [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/sources_1/imports/sources_1/new/top.v:54]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[17]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[16]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[15]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[14]
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_AXI_awaddr[13]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[17]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[16]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[15]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[14]
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_AXI_awaddr[13]
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_ARESETN
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 581.984 ; gain = 163.672
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 581.984 ; gain = 163.672
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp89/design_1_microblaze_0_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp89/design_1_microblaze_0_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp90/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'device_inst/design_1_i/interrupt_concat'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp90/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'device_inst/design_1_i/interrupt_concat'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp91/design_1_mdm_1_0_in_context.xdc] for cell 'device_inst/design_1_i/mdm_1'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp91/design_1_mdm_1_0_in_context.xdc] for cell 'device_inst/design_1_i/mdm_1'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp92/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'device_inst/design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp92/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'device_inst/design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp93/design_1_xbar_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp93/design_1_xbar_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp94/design_1_dlmb_v10_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp94/design_1_dlmb_v10_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp95/design_1_dlmb_v10_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp95/design_1_dlmb_v10_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp96/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp96/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp97/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp97/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp98/design_1_lmb_bram_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp98/design_1_lmb_bram_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp99/design_1_axi_intc_0_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_intc_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp99/design_1_axi_intc_0_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_intc_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc] for cell 'device_inst/design_1_i/mig_7series_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc] for cell 'device_inst/design_1_i/mig_7series_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp101/design_1_axi_tft_0_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_tft_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp101/design_1_axi_tft_0_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_tft_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp102/design_1_clk_wiz_0_0_in_context.xdc] for cell 'device_inst/design_1_i/clk_wiz_25MHz'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp102/design_1_clk_wiz_0_0_in_context.xdc] for cell 'device_inst/design_1_i/clk_wiz_25MHz'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp103/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'device_inst/design_1_i/xadc_wiz_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp103/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'device_inst/design_1_i/xadc_wiz_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp104/design_1_xfft_0_2_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/xfft_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp104/design_1_xfft_0_2_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/xfft_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp105/design_1_axi_datamover_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/axi_datamover_fft'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp105/design_1_axi_datamover_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/axi_datamover_fft'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp106/design_1_xlconstant_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/fft_all_0_imag'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp106/design_1_xlconstant_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/fft_all_0_imag'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp107/design_1_xlconcat_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/xlconcat_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp107/design_1_xlconcat_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/xlconcat_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp108/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_1/blk_mem_gen_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp108/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_1/blk_mem_gen_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp109/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_1/axi_bram_ctrl_fft_write'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp109/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_1/axi_bram_ctrl_fft_write'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp110/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_1/axi_bram_ctrl_fft_read'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp110/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_1/axi_bram_ctrl_fft_read'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp111/design_1_axi_smc_1_1_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_1'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp111/design_1_axi_smc_1_1_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_1'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp112/design_1_xlconstant_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/fft_config'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp112/design_1_xlconstant_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/fft_config'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp113/design_1_xlconstant_0_2_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/always_true'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp113/design_1_xlconstant_0_2_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/always_true'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp114/design_1_xlconstant_0_3_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/dtmv_fft_cmd'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp114/design_1_xlconstant_0_3_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_1/dtmv_fft_cmd'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp115/design_1_axi_smc_2_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_2'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp115/design_1_axi_smc_2_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_2'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp116/design_1_axi_smc_3_1_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_3'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp116/design_1_axi_smc_3_1_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_3'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp117/design_1_axi_bram_ctrl_0_3_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_1/axi_bram_ctrl_mod_read'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp117/design_1_axi_bram_ctrl_0_3_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_1/axi_bram_ctrl_mod_read'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp118/design_1_axi_bram_ctrl_0_3_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_1/axi_bram_ctrl_mod_write'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp118/design_1_axi_bram_ctrl_0_3_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_1/axi_bram_ctrl_mod_write'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp119/design_1_blk_mem_gen_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_1/blk_mem_gen_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp119/design_1_blk_mem_gen_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_1/blk_mem_gen_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp120/design_1_xlslice_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/xlslice_real'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp120/design_1_xlslice_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/xlslice_real'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp121/design_1_floating_point_square_imag_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_square_real'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp121/design_1_floating_point_square_imag_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_square_real'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp122/design_1_xlslice_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/xlslice_imag'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp122/design_1_xlslice_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/xlslice_imag'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp123/design_1_floating_point_square_imag_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_square_imag'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp123/design_1_floating_point_square_imag_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_square_imag'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp124/design_1_floating_point_fix2float_imag_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_fix2float_real'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp124/design_1_floating_point_fix2float_imag_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_fix2float_real'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp125/design_1_dtmv_cmd_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/dtmv_mod_mm2s_cmd'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp125/design_1_dtmv_cmd_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/dtmv_mod_mm2s_cmd'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp126/design_1_floating_point_0_5_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_sqrt'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp126/design_1_floating_point_0_5_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_sqrt'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp127/design_1_floating_point_0_4_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_float2fix'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp127/design_1_floating_point_0_4_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_float2fix'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp128/design_1_floating_point_0_2_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_sum'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp128/design_1_floating_point_0_2_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_sum'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp129/design_1_floating_point_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_fix2float_imag'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp129/design_1_floating_point_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/floating_point_fix2float_imag'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp130/design_1_xlconstant_0_4_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/xlconstant_true'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp130/design_1_xlconstant_0_4_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/xlconstant_true'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp131/design_1_axi_datamover_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/axi_datamover_mod_mm2s'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp131/design_1_axi_datamover_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/axi_datamover_mod_mm2s'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp132/design_1_axi_datamover_0_2_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/axi_datamover_mod_s2mm'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp132/design_1_axi_datamover_0_2_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/axi_datamover_mod_s2mm'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp133/design_1_dtmv_mod_mm2s_cmd_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/dtmv_mod_s2mm_cmd'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp133/design_1_dtmv_mod_mm2s_cmd_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/dtmv_mod_s2mm_cmd'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp134/design_1_axi_smc_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp134/design_1_axi_smc_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp135/design_1_fir_compiler_0_0_in_context.xdc] for cell 'device_inst/design_1_i/fir_compiler_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp135/design_1_fir_compiler_0_0_in_context.xdc] for cell 'device_inst/design_1_i/fir_compiler_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp136/design_1_hamming_window_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_preprocess_1/hamming_window_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp136/design_1_hamming_window_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_preprocess_1/hamming_window_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp137/design_1_xlconstant_0_5_in_context.xdc] for cell 'device_inst/design_1_i/hier_preprocess_1/hamming_ap_start'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp137/design_1_xlconstant_0_5_in_context.xdc] for cell 'device_inst/design_1_i/hier_preprocess_1/hamming_ap_start'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp138/design_1_stream_average_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/stream_average_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp138/design_1_stream_average_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/stream_average_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp139/design_1_xlconstant_0_6_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/stream_avg_start'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp139/design_1_xlconstant_0_6_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_1/stream_avg_start'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp140/design_1_axi_bram_ctrl_mod_read_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_2/axi_bram_ctrl_mod_read'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp140/design_1_axi_bram_ctrl_mod_read_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_2/axi_bram_ctrl_mod_read'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp141/design_1_axi_bram_ctrl_mod_read_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_2/axi_bram_ctrl_mod_write'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp141/design_1_axi_bram_ctrl_mod_read_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_2/axi_bram_ctrl_mod_write'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp142/design_1_blk_mem_gen_0_3_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_2/blk_mem_gen_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp142/design_1_blk_mem_gen_0_3_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_data_2/blk_mem_gen_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp143/design_1_xlslice_real_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/xlslice_real'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp143/design_1_xlslice_real_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/xlslice_real'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp144/design_1_floating_point_square_imag_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_square_real'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp144/design_1_floating_point_square_imag_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_square_real'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp145/design_1_xlslice_imag_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/xlslice_imag'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp145/design_1_xlslice_imag_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/xlslice_imag'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp146/design_1_floating_point_square_imag_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_square_imag'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp146/design_1_floating_point_square_imag_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_square_imag'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp147/design_1_floating_point_fix2float_real_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_fix2float_real'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp147/design_1_floating_point_fix2float_real_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_fix2float_real'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp148/design_1_dtmv_mod_mm2s_cmd_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/dtmv_mod_mm2s_cmd'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp148/design_1_dtmv_mod_mm2s_cmd_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/dtmv_mod_mm2s_cmd'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp149/design_1_floating_point_sqrt_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_sqrt'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp149/design_1_floating_point_sqrt_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_sqrt'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp150/design_1_floating_point_float2fix_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_float2fix'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp150/design_1_floating_point_float2fix_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_float2fix'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp151/design_1_floating_point_sum_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_sum'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp151/design_1_floating_point_sum_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_sum'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp152/design_1_floating_point_fix2float_imag_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_fix2float_imag'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp152/design_1_floating_point_fix2float_imag_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/floating_point_fix2float_imag'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp153/design_1_always_true_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/xlconstant_true'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp153/design_1_always_true_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/xlconstant_true'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp154/design_1_axi_datamover_mod_mm2s_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/axi_datamover_mod_mm2s'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp154/design_1_axi_datamover_mod_mm2s_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/axi_datamover_mod_mm2s'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp155/design_1_axi_datamover_mod_s2mm_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/axi_datamover_mod_s2mm'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp155/design_1_axi_datamover_mod_s2mm_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/axi_datamover_mod_s2mm'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp156/design_1_dtmv_mod_s2mm_cmd_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/dtmv_mod_s2mm_cmd'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp156/design_1_dtmv_mod_s2mm_cmd_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/dtmv_mod_s2mm_cmd'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp157/design_1_always_true_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/stream_avg_start'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp157/design_1_always_true_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/stream_avg_start'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp158/design_1_stream_average_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/stream_average_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp158/design_1_stream_average_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_mod_2/stream_average_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp159/design_1_axi_bram_ctrl_mod_read_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_2/axi_bram_ctrl_fft_read'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp159/design_1_axi_bram_ctrl_mod_read_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_2/axi_bram_ctrl_fft_read'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp160/design_1_axi_bram_ctrl_mod_read_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_2/axi_bram_ctrl_fft_write'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp160/design_1_axi_bram_ctrl_mod_read_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_2/axi_bram_ctrl_fft_write'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp161/design_1_blk_mem_gen_0_2_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_2/blk_mem_gen_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp161/design_1_blk_mem_gen_0_2_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_data_2/blk_mem_gen_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp162/design_1_xlconcat_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/xlconcat_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp162/design_1_xlconcat_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/xlconcat_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp163/design_1_dtmv_fft_cmd_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/dtmv_fft_cmd'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp163/design_1_dtmv_fft_cmd_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/dtmv_fft_cmd'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp164/design_1_xfft_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/xfft_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp164/design_1_xfft_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/xfft_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp165/design_1_fft_config_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/fft_config'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp165/design_1_fft_config_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/fft_config'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp166/design_1_always_true_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/always_true'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp166/design_1_always_true_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/always_true'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp167/design_1_fft_all_0_imag_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/fft_all_0_imag'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp167/design_1_fft_all_0_imag_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/fft_all_0_imag'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp168/design_1_axi_datamover_mod_s2mm_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/axi_datamover_fft'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp168/design_1_axi_datamover_mod_s2mm_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_fft_2/axi_datamover_fft'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp169/design_1_always_true_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_preprocess_2/hamming_ap_start'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp169/design_1_always_true_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_preprocess_2/hamming_ap_start'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp170/design_1_hamming_window_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_preprocess_2/hamming_window_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp170/design_1_hamming_window_0_0_in_context.xdc] for cell 'device_inst/design_1_i/hier_preprocess_2/hamming_window_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp171/design_1_fir_compiler_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_preprocess_2/fir_compiler_0'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp171/design_1_fir_compiler_0_1_in_context.xdc] for cell 'device_inst/design_1_i/hier_preprocess_2/fir_compiler_0'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp172/design_1_axi_smc_1_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_4'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp172/design_1_axi_smc_1_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_4'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp173/design_1_axi_smc_2_1_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_5'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp173/design_1_axi_smc_2_1_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_5'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp174/design_1_axi_smc_3_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_6'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp174/design_1_axi_smc_3_0_in_context.xdc] for cell 'device_inst/design_1_i/axi_smc_6'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp175/design_1_axi_gpio_0_0_in_context.xdc] for cell 'device_inst/design_1_i/gpio_read_switch'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp175/design_1_axi_gpio_0_0_in_context.xdc] for cell 'device_inst/design_1_i/gpio_read_switch'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp176/design_1_auto_pc_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_axi_periph/m05_couplers/auto_pc'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp176/design_1_auto_pc_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_axi_periph/m05_couplers/auto_pc'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp177/design_1_auto_pc_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp177/design_1_auto_pc_0_in_context.xdc] for cell 'device_inst/design_1_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 937.719 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'device_inst/design_1_i/hier_fft_data_1/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '12.308', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'device_inst/design_1_i/hier_fft_data_2/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '12.308', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'device_inst/design_1_i/hier_mod_data_1/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '12.308', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'device_inst/design_1_i/hier_mod_data_2/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '12.308', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'device_inst/design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '12.308', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[10]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[10]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[11]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[11]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[12]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[12]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[2]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[2]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[3]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[3]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[4]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[4]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[5]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[5]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[6]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[6]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[7]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[7]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[8]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[8]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[9]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[9]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ba[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ba[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ba[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ba[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ba[2]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ba[2]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_cas_n. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_cas_n. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ck_n[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ck_n[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ck_p[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ck_p[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_cke[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_cke[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_cs_n[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_cs_n[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dm[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dm[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dm[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dm[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[10]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[10]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[11]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[11]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[12]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[12]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[13]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[13]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[14]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[14]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[15]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[15]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[2]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[2]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[3]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[3]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[4]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[4]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[5]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[5]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[6]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[6]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[7]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[7]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[8]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[8]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[9]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[9]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dqs_n[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dqs_n[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dqs_n[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dqs_n[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dqs_p[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dqs_p[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dqs_p[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dqs_p[1]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_odt[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_odt[0]. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ras_n. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ras_n. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_we_n. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_we_n. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_i_0. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_i_0. (constraint file  D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/.Xil/Vivado-1452-RIEMANN/dcp100/design_1_mig_7series_0_0_in_context.xdc, line 101).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/axi_intc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/axi_smc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/axi_smc_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/axi_smc_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/axi_smc_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/axi_smc_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/axi_smc_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/axi_smc_6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/axi_tft_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/clk_wiz_25MHz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/fir_compiler_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/gpio_read_switch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_1/always_true. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_1/axi_datamover_fft. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_1/dtmv_fft_cmd. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_1/fft_all_0_imag. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_1/fft_config. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_1/xfft_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_1/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_2/always_true. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_2/axi_datamover_fft. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_2/dtmv_fft_cmd. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_2/fft_all_0_imag. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_2/fft_config. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_2/xfft_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_2/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_data_1/axi_bram_ctrl_fft_read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_data_1/axi_bram_ctrl_fft_write. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_data_1/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_data_2/axi_bram_ctrl_fft_read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_data_2/axi_bram_ctrl_fft_write. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_fft_data_2/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/axi_datamover_mod_mm2s. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/axi_datamover_mod_s2mm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/dtmv_mod_mm2s_cmd. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/dtmv_mod_s2mm_cmd. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/floating_point_fix2float_imag. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/floating_point_fix2float_real. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/floating_point_float2fix. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/floating_point_sqrt. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/floating_point_square_imag. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/floating_point_square_real. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/floating_point_sum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/stream_average_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/stream_avg_start. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/xlconstant_true. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/xlslice_imag. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_1/xlslice_real. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/axi_datamover_mod_mm2s. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/axi_datamover_mod_s2mm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/dtmv_mod_mm2s_cmd. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/dtmv_mod_s2mm_cmd. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/floating_point_fix2float_imag. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/floating_point_fix2float_real. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/floating_point_float2fix. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/floating_point_sqrt. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/floating_point_square_imag. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/floating_point_square_real. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/floating_point_sum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/stream_average_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/stream_avg_start. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/xlconstant_true. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/xlslice_imag. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_2/xlslice_real. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_data_1/axi_bram_ctrl_mod_read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_data_1/axi_bram_ctrl_mod_write. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_data_1/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_data_2/axi_bram_ctrl_mod_read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_data_2/axi_bram_ctrl_mod_write. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_mod_data_2/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_preprocess_1/hamming_ap_start. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_preprocess_1/hamming_window_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_preprocess_2/fir_compiler_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_preprocess_2/hamming_ap_start. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/hier_preprocess_2/hamming_window_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/interrupt_concat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/microblaze_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/microblaze_0_axi_periph/m05_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/mig_7series_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for device_inst/design_1_i/xadc_wiz_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/mdm_1/Dbg_Clk_0' to pin 'device_inst/design_1_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/mdm_1/Dbg_Update_0' to pin 'device_inst/design_1_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'device_inst/design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'device_inst/design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/mig_7series_0/ui_addn_clk_0' to pin 'device_inst/design_1_i/mig_7series_0/bbstub_ui_addn_clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/mig_7series_0/ui_addn_clk_1' to pin 'device_inst/design_1_i/mig_7series_0/bbstub_ui_addn_clk_1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/mig_7series_0/ui_addn_clk_2' to pin 'device_inst/design_1_i/mig_7series_0/bbstub_ui_addn_clk_2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/mig_7series_0/ui_addn_clk_3' to pin 'device_inst/design_1_i/mig_7series_0/bbstub_ui_addn_clk_3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/mig_7series_0/ui_addn_clk_4' to pin 'device_inst/design_1_i/mig_7series_0/bbstub_ui_addn_clk_4/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/mig_7series_0/ui_clk' to pin 'device_inst/design_1_i/mig_7series_0/bbstub_ui_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/clk_wiz_25MHz/clk_in1' to pin 'device_inst/design_1_i/mig_7series_0/bbstub_ui_addn_clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/clk_wiz_25MHz/clk_out1' to pin 'device_inst/design_1_i/clk_wiz_25MHz/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'device_inst/design_1_i/clk_wiz_25MHz/clk_in1' to 'device_inst/design_1_i/mig_7series_0/bbstub_ui_addn_clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/hier_fft_data_1/axi_bram_ctrl_fft_write/bram_clk_a' to pin 'device_inst/design_1_i/hier_fft_data_1/axi_bram_ctrl_fft_write/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/hier_fft_data_1/axi_bram_ctrl_fft_read/bram_clk_a' to pin 'device_inst/design_1_i/hier_fft_data_1/axi_bram_ctrl_fft_read/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/hier_mod_data_1/axi_bram_ctrl_mod_read/bram_clk_a' to pin 'device_inst/design_1_i/hier_mod_data_1/axi_bram_ctrl_mod_read/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/hier_mod_data_1/axi_bram_ctrl_mod_write/bram_clk_a' to pin 'device_inst/design_1_i/hier_mod_data_1/axi_bram_ctrl_mod_write/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/hier_mod_data_2/axi_bram_ctrl_mod_read/bram_clk_a' to pin 'device_inst/design_1_i/hier_mod_data_2/axi_bram_ctrl_mod_read/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/hier_mod_data_2/axi_bram_ctrl_mod_write/bram_clk_a' to pin 'device_inst/design_1_i/hier_mod_data_2/axi_bram_ctrl_mod_write/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/hier_fft_data_2/axi_bram_ctrl_fft_read/bram_clk_a' to pin 'device_inst/design_1_i/hier_fft_data_2/axi_bram_ctrl_fft_read/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'device_inst/design_1_i/hier_fft_data_2/axi_bram_ctrl_fft_write/bram_clk_a' to pin 'device_inst/design_1_i/hier_fft_data_2/axi_bram_ctrl_fft_write/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5819] Moved 20 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------------+----------+
+|      |BlackBox name                            |Instances |
++------+-----------------------------------------+----------+
+|1     |design_1_xbar_0                          |         1|
+|2     |design_1_auto_pc_0                       |         1|
+|3     |design_1_auto_pc_1                       |         1|
+|4     |design_1_axi_intc_0_0                    |         1|
+|5     |design_1_axi_smc_0                       |         1|
+|6     |design_1_axi_smc_1_1                     |         1|
+|7     |design_1_axi_smc_2_0                     |         1|
+|8     |design_1_axi_smc_3_1                     |         1|
+|9     |design_1_axi_smc_1_0                     |         1|
+|10    |design_1_axi_smc_2_1                     |         1|
+|11    |design_1_axi_smc_3_0                     |         1|
+|12    |design_1_axi_tft_0_0                     |         1|
+|13    |design_1_clk_wiz_0_0                     |         1|
+|14    |design_1_fir_compiler_0_0                |         1|
+|15    |design_1_axi_gpio_0_0                    |         1|
+|16    |design_1_microblaze_0_xlconcat_0         |         1|
+|17    |design_1_mdm_1_0                         |         1|
+|18    |design_1_microblaze_0_0                  |         1|
+|19    |design_1_mig_7series_0_0                 |         1|
+|20    |design_1_rst_clk_wiz_1_100M_0            |         1|
+|21    |design_1_xadc_wiz_0_0                    |         1|
+|22    |design_1_xlconstant_0_2                  |         1|
+|23    |design_1_axi_datamover_0_1               |         1|
+|24    |design_1_xlconstant_0_3                  |         1|
+|25    |design_1_xlconstant_0_0                  |         1|
+|26    |design_1_xlconstant_0_1                  |         1|
+|27    |design_1_xfft_0_2                        |         1|
+|28    |design_1_xlconcat_0_0                    |         1|
+|29    |design_1_always_true_0                   |         1|
+|30    |design_1_axi_datamover_fft_0             |         1|
+|31    |design_1_dtmv_fft_cmd_0                  |         1|
+|32    |design_1_fft_all_0_imag_0                |         1|
+|33    |design_1_fft_config_0                    |         1|
+|34    |design_1_xfft_0_0                        |         1|
+|35    |design_1_xlconcat_0_1                    |         1|
+|36    |design_1_axi_bram_ctrl_0_1               |         1|
+|37    |design_1_axi_bram_ctrl_0_0               |         1|
+|38    |design_1_blk_mem_gen_0_0                 |         1|
+|39    |design_1_axi_bram_ctrl_fft_read_0        |         1|
+|40    |design_1_axi_bram_ctrl_fft_write_0       |         1|
+|41    |design_1_blk_mem_gen_0_2                 |         1|
+|42    |design_1_axi_datamover_0_0               |         1|
+|43    |design_1_axi_datamover_0_2               |         1|
+|44    |design_1_dtmv_cmd_0                      |         1|
+|45    |design_1_dtmv_mod_mm2s_cmd_0             |         1|
+|46    |design_1_floating_point_0_0              |         1|
+|47    |design_1_floating_point_fix2float_imag_0 |         1|
+|48    |design_1_floating_point_0_4              |         1|
+|49    |design_1_floating_point_0_5              |         1|
+|50    |design_1_floating_point_0_1              |         1|
+|51    |design_1_floating_point_square_imag_0    |         1|
+|52    |design_1_floating_point_0_2              |         1|
+|53    |design_1_stream_average_0_0              |         1|
+|54    |design_1_xlconstant_0_6                  |         1|
+|55    |design_1_xlconstant_0_4                  |         1|
+|56    |design_1_xlslice_0_0                     |         1|
+|57    |design_1_xlslice_0_1                     |         1|
+|58    |design_1_axi_datamover_mod_mm2s_0        |         1|
+|59    |design_1_axi_datamover_mod_s2mm_0        |         1|
+|60    |design_1_dtmv_mod_mm2s_cmd_1             |         1|
+|61    |design_1_dtmv_mod_s2mm_cmd_0             |         1|
+|62    |design_1_floating_point_fix2float_imag_1 |         1|
+|63    |design_1_floating_point_fix2float_real_0 |         1|
+|64    |design_1_floating_point_float2fix_0      |         1|
+|65    |design_1_floating_point_sqrt_0           |         1|
+|66    |design_1_floating_point_square_imag_1    |         1|
+|67    |design_1_floating_point_square_real_0    |         1|
+|68    |design_1_floating_point_sum_0            |         1|
+|69    |design_1_stream_average_0_1              |         1|
+|70    |design_1_stream_avg_start_0              |         1|
+|71    |design_1_xlconstant_true_0               |         1|
+|72    |design_1_xlslice_imag_0                  |         1|
+|73    |design_1_xlslice_real_0                  |         1|
+|74    |design_1_axi_bram_ctrl_0_3               |         1|
+|75    |design_1_axi_bram_ctrl_0_2               |         1|
+|76    |design_1_blk_mem_gen_0_1                 |         1|
+|77    |design_1_axi_bram_ctrl_mod_read_0        |         1|
+|78    |design_1_axi_bram_ctrl_mod_write_0       |         1|
+|79    |design_1_blk_mem_gen_0_3                 |         1|
+|80    |design_1_xlconstant_0_5                  |         1|
+|81    |design_1_hamming_window_0_0              |         1|
+|82    |design_1_fir_compiler_0_1                |         1|
+|83    |design_1_hamming_ap_start_0              |         1|
+|84    |design_1_hamming_window_0_1              |         1|
+|85    |design_1_dlmb_bram_if_cntlr_0            |         1|
+|86    |design_1_dlmb_v10_0                      |         1|
+|87    |design_1_ilmb_bram_if_cntlr_0            |         1|
+|88    |design_1_ilmb_v10_0                      |         1|
+|89    |design_1_lmb_bram_0                      |         1|
++------+-----------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------------+------+
+|      |Cell                                     |Count |
++------+-----------------------------------------+------+
+|1     |design_1_always_true_0                   |     1|
+|2     |design_1_auto_pc_0                       |     1|
+|3     |design_1_auto_pc_1                       |     1|
+|4     |design_1_axi_bram_ctrl_0_0               |     1|
+|5     |design_1_axi_bram_ctrl_0_1               |     1|
+|6     |design_1_axi_bram_ctrl_0_2               |     1|
+|7     |design_1_axi_bram_ctrl_0_3               |     1|
+|8     |design_1_axi_bram_ctrl_fft_read_0        |     1|
+|9     |design_1_axi_bram_ctrl_fft_write_0       |     1|
+|10    |design_1_axi_bram_ctrl_mod_read_0        |     1|
+|11    |design_1_axi_bram_ctrl_mod_write_0       |     1|
+|12    |design_1_axi_datamover_0_0               |     1|
+|13    |design_1_axi_datamover_0_1               |     1|
+|14    |design_1_axi_datamover_0_2               |     1|
+|15    |design_1_axi_datamover_fft_0             |     1|
+|16    |design_1_axi_datamover_mod_mm2s_0        |     1|
+|17    |design_1_axi_datamover_mod_s2mm_0        |     1|
+|18    |design_1_axi_gpio_0_0                    |     1|
+|19    |design_1_axi_intc_0_0                    |     1|
+|20    |design_1_axi_smc_0                       |     1|
+|21    |design_1_axi_smc_1_0                     |     1|
+|22    |design_1_axi_smc_1_1                     |     1|
+|23    |design_1_axi_smc_2_0                     |     1|
+|24    |design_1_axi_smc_2_1                     |     1|
+|25    |design_1_axi_smc_3_0                     |     1|
+|26    |design_1_axi_smc_3_1                     |     1|
+|27    |design_1_axi_tft_0_0                     |     1|
+|28    |design_1_blk_mem_gen_0_0                 |     1|
+|29    |design_1_blk_mem_gen_0_1                 |     1|
+|30    |design_1_blk_mem_gen_0_2                 |     1|
+|31    |design_1_blk_mem_gen_0_3                 |     1|
+|32    |design_1_clk_wiz_0_0                     |     1|
+|33    |design_1_dlmb_bram_if_cntlr_0            |     1|
+|34    |design_1_dlmb_v10_0                      |     1|
+|35    |design_1_dtmv_cmd_0                      |     1|
+|36    |design_1_dtmv_fft_cmd_0                  |     1|
+|37    |design_1_dtmv_mod_mm2s_cmd_0             |     1|
+|38    |design_1_dtmv_mod_mm2s_cmd_1             |     1|
+|39    |design_1_dtmv_mod_s2mm_cmd_0             |     1|
+|40    |design_1_fft_all_0_imag_0                |     1|
+|41    |design_1_fft_config_0                    |     1|
+|42    |design_1_fir_compiler_0_0                |     1|
+|43    |design_1_fir_compiler_0_1                |     1|
+|44    |design_1_floating_point_0_0              |     1|
+|45    |design_1_floating_point_0_1              |     1|
+|46    |design_1_floating_point_0_2              |     1|
+|47    |design_1_floating_point_0_4              |     1|
+|48    |design_1_floating_point_0_5              |     1|
+|49    |design_1_floating_point_fix2float_imag_0 |     1|
+|50    |design_1_floating_point_fix2float_imag_1 |     1|
+|51    |design_1_floating_point_fix2float_real_0 |     1|
+|52    |design_1_floating_point_float2fix_0      |     1|
+|53    |design_1_floating_point_sqrt_0           |     1|
+|54    |design_1_floating_point_square_imag_0    |     1|
+|55    |design_1_floating_point_square_imag_1    |     1|
+|56    |design_1_floating_point_square_real_0    |     1|
+|57    |design_1_floating_point_sum_0            |     1|
+|58    |design_1_hamming_ap_start_0              |     1|
+|59    |design_1_hamming_window_0_0              |     1|
+|60    |design_1_hamming_window_0_1              |     1|
+|61    |design_1_ilmb_bram_if_cntlr_0            |     1|
+|62    |design_1_ilmb_v10_0                      |     1|
+|63    |design_1_lmb_bram_0                      |     1|
+|64    |design_1_mdm_1_0                         |     1|
+|65    |design_1_microblaze_0_0                  |     1|
+|66    |design_1_microblaze_0_xlconcat_0         |     1|
+|67    |design_1_mig_7series_0_0                 |     1|
+|68    |design_1_rst_clk_wiz_1_100M_0            |     1|
+|69    |design_1_stream_average_0_0              |     1|
+|70    |design_1_stream_average_0_1              |     1|
+|71    |design_1_stream_avg_start_0              |     1|
+|72    |design_1_xadc_wiz_0_0                    |     1|
+|73    |design_1_xbar_0                          |     1|
+|74    |design_1_xfft_0_0                        |     1|
+|75    |design_1_xfft_0_2                        |     1|
+|76    |design_1_xlconcat_0_0                    |     1|
+|77    |design_1_xlconcat_0_1                    |     1|
+|78    |design_1_xlconstant_0_0                  |     1|
+|79    |design_1_xlconstant_0_1                  |     1|
+|80    |design_1_xlconstant_0_2                  |     1|
+|81    |design_1_xlconstant_0_3                  |     1|
+|82    |design_1_xlconstant_0_4                  |     1|
+|83    |design_1_xlconstant_0_5                  |     1|
+|84    |design_1_xlconstant_0_6                  |     1|
+|85    |design_1_xlconstant_true_0               |     1|
+|86    |design_1_xlslice_0_0                     |     1|
+|87    |design_1_xlslice_0_1                     |     1|
+|88    |design_1_xlslice_imag_0                  |     1|
+|89    |design_1_xlslice_real_0                  |     1|
+|90    |IBUF                                     |    18|
+|91    |OBUF                                     |    14|
++------+-----------------------------------------+------+
+
+Report Instance Areas: 
++------+--------------------------------+--------------------------------------+------+
+|      |Instance                        |Module                                |Cells |
++------+--------------------------------+--------------------------------------+------+
+|1     |top                             |                                      |  7091|
+|2     |  device_inst                   |design_1_wrapper                      |  7059|
+|3     |    design_1_i                  |design_1                              |  7059|
+|4     |      microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_0    |  1152|
+|5     |        m04_couplers            |m04_couplers_imp_5LX7BU               |   167|
+|6     |        m05_couplers            |m05_couplers_imp_1XR4ZAZ              |   167|
+|7     |      hier_fft_1                |hier_fft_1_imp_12R9B6A                |   309|
+|8     |      hier_fft_2                |hier_fft_2_imp_1DFE0WN                |   309|
+|9     |      hier_fft_data_1           |hier_fft_data_1_imp_1ME67Y8           |   254|
+|10    |      hier_fft_data_2           |hier_fft_data_2_imp_1TH2V45           |   254|
+|11    |      hier_mod_1                |hier_mod_1_imp_QF52CR                 |   691|
+|12    |      hier_mod_2                |hier_mod_2_imp_SHXM26                 |   691|
+|13    |      hier_mod_data_1           |hier_mod_data_1_imp_1AO2YGD           |   254|
+|14    |      hier_mod_data_2           |hier_mod_data_2_imp_14FU8MG           |   254|
+|15    |      hier_preprocess_1         |hier_preprocess_1_imp_1XNOGW7         |    30|
+|16    |      hier_preprocess_2         |hier_preprocess_2_imp_1HYT9AA         |    48|
+|17    |      microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
++------+--------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 937.719 ; gain = 519.406
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 937.719 ; gain = 163.672
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 937.719 ; gain = 519.406
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+263 Infos, 156 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:57 . Memory (MB): peak = 944.137 ; gain = 537.363
+INFO: [Common 17-1381] The checkpoint 'D:/HUST_study/FPGA_based_DSP/microblaze_3_4_1/microblaze_3_4_1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 944.137 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 22 00:52:39 2018...

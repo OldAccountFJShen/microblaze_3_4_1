@@ -1,0 +1,25 @@
+23:38:28 **** Build of configuration Debug for project standalone_bsp_2_xtft_example_1 ****
+make all 
+'Building file: ../src/xtft_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtft_example.o" -I../../standalone_bsp_2/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xtft_example.d" -MT"src/xtft_example.o" -o "src/xtft_example.o" "../src/xtft_example.c"
+../src/xtft_example.c:99:2: warning: #warning "CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H" [-Wcpp]
+ #warning "CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H"
+  ^~~~~~~
+../src/xtft_example.c: In function 'TftExample':
+../src/xtft_example.c:107:25: error: 'DDR_HIGH_ADDR' undeclared (first use in this function)
+ #define TFT_FRAME_ADDR  DDR_HIGH_ADDR - 0x001FFFFF
+                         ^
+../src/xtft_example.c:228:38: note: in expansion of macro 'TFT_FRAME_ADDR'
+  XTft_SetFrameBaseAddr(&TftInstance, TFT_FRAME_ADDR);
+                                      ^~~~~~~~~~~~~~
+../src/xtft_example.c:107:25: note: each undeclared identifier is reported only once for each function it appears in
+ #define TFT_FRAME_ADDR  DDR_HIGH_ADDR - 0x001FFFFF
+                         ^
+../src/xtft_example.c:228:38: note: in expansion of macro 'TFT_FRAME_ADDR'
+  XTft_SetFrameBaseAddr(&TftInstance, TFT_FRAME_ADDR);
+                                      ^~~~~~~~~~~~~~
+make: *** [src/xtft_example.o] ´íÎó 1
+
+23:38:29 Build Finished (took 469ms)
+

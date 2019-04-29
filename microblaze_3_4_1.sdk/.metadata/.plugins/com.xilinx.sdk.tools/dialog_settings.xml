@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="top_hw_platform_2-verifyFlash"/>
+	<item value="top_hw_platform_2" key="programflash.hwplatform"/>
+	<item value="" key="top_hw_platform_2-offSet"/>
+	<item value="false" key="top_hw_platform_2-blankCheck"/>
+	<item value="28f00am29ew-bpi-x16" key="top_hw_platform_2-flashType"/>
+	<item value="" key="top_hw_platform_2-fsblFile"/>
+	<item value="" key="top_hw_platform_2-imgFile"/>
+	<item value="Auto Detect" key="top_hw_platform_2-device"/>
+	<item value="Local" key="top_hw_platform_2-target"/>
+</section>

@@ -1,0 +1,27 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port outstream_TREADY -pg 1 -y 500 -defaultsOSRD
+preplace port ap_clk -pg 1 -y 100 -defaultsOSRD
+preplace port ap_rst_n -pg 1 -y 80 -defaultsOSRD
+preplace port outstream_TVALID -pg 1 -y 390 -defaultsOSRD
+preplace port S_AXIS_DATA -pg 1 -y 60 -defaultsOSRD
+preplace portBus outstream_TLAST -pg 1 -y 450 -defaultsOSRD
+preplace portBus outstream_TDATA -pg 1 -y 430 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 1 -y 80 -defaultsOSRD
+preplace inst hamming_window_0 -pg 1 -lvl 2 -y 410 -defaultsOSRD
+preplace inst hamming_ap_start -pg 1 -lvl 1 -y 390 -defaultsOSRD
+preplace netloc Conn1 1 0 1 NJ
+preplace netloc hier_fft_s_axis_data_tready 1 0 3 NJ 500 NJ 500 730
+preplace netloc s_axis_data_tlast_1 1 2 1 NJ
+preplace netloc microblaze_0_Clk 1 0 2 20 230 340
+preplace netloc hamming_window_0_outstream_TVALID 1 2 1 NJ
+preplace netloc hamming_ap_start_dout 1 1 1 NJ
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 2 30 240 330
+preplace netloc fir_compiler_0_M_AXIS_DATA 1 1 1 350
+preplace netloc hamming_window_0_outstream_TDATA 1 2 1 NJ
+levelinfo -pg 1 0 180 540 750 -top 0 -bot 520
+",
+}
+0

@@ -1,0 +1,13 @@
+/*
+ * color.h
+ *
+ *  Created on: 2018Äê6ÔÂ19ÈÕ
+ *      Author: AsFrG
+ */
+
+#ifndef SRC_COLOR_H_
+#define SRC_COLOR_H_
+
+uint hue2rgb(int angle);
+
+#endif /* SRC_COLOR_H_ */
